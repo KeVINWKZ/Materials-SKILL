@@ -1,0 +1,27 @@
+{
+  "material_system": "anatase TiO2 and nitrogen-modified TiO2 powders",
+  "research_goal": "Evaluate whether modification improves photocatalytic response under simulated solar illumination and determine the responsible mechanism without assuming it in advance.",
+  "application": "aqueous photocatalysis",
+  "known_processes": [
+    "powder synthesis route to be selected after literature review",
+    "batch photoreactor screening"
+  ],
+  "available_equipment": [
+    "XRD",
+    "XPS",
+    "UV-Vis diffuse reflectance",
+    "photoluminescence spectroscopy",
+    "electron microscopy",
+    "chromatography"
+  ],
+  "constraints": {
+    "budget": "moderate",
+    "sample_scale": "gram-scale",
+    "safety": "follow institutional EHS and chemical SDS"
+  },
+  "evidence_preferences": {
+    "minimum_verified_sources": 3,
+    "include_primary_research": true,
+    "include_reviews": true
+  }
+}
