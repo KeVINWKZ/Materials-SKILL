@@ -1,3 +1,4 @@
+[![skills.sh](https://skills.sh/b/KeVINWKZ/Materials-SKILL)](https://skills.sh/KeVINWKZ/Materials-SKILL)
 <div align="center">
 
 <img src="skills/materials-research-guide/assets/materials-research-guide-icon.png" alt="Materials Research Guide" width="176">
