@@ -1,15 +1,15 @@
-
 <div align="center">
 
-<img src="skills/materials-research-guide/assets/materials-research-guide-icon.png" alt="Materials Research Guide" width="176">
+<img src="skills/materials-research-guide/assets/materials-research-guide-icon.png"
+     alt="Materials Research Guide"
+     width="176">
 
 # Materials Skills
 
 Evidence-grounded AI skills for materials-science research.
-[![skills.sh](https://skills.sh/b/KeVINWKZ/Materials-SKILL)](https://skills.sh/KeVINWKZ/Materials-SKILL)
 
+[![Materials Research Guide](https://shieldcn.dev/skills/KeVINWKZ/Materials-SKILL/materials-research-guide.svg)](https://skills.sh/KeVINWKZ/Materials-SKILL/materials-research-guide)
 ![License](https://img.shields.io/github/license/KeVINWKZ/Materials-SKILL)
-
 
 </div>
 
