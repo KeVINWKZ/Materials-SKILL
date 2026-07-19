@@ -1,0 +1,10 @@
+interface:
+  display_name: "Materials Research Guide"
+  short_description: "基于可核验文献生成材料实验、表征、机理、创新点评估与论文研究方案"
+  icon_small: "./assets/materials-research-guide-icon.png"
+  icon_large: "./assets/materials-research-guide-icon.png"
+  brand_color: "#18C7C9"
+  default_prompt: "Use $materials-research-guide to design a concise, literature-grounded research plan for my material system."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,15 @@
+{
+  "slug": "materials-research-guide",
+  "version": "2.1.0",
+  "displayName": "Materials Research Guide",
+  "summary": "联动学术检索并按检索能力自动降级证据声明，为任意材料体系生成可审计的实验、表征与机理方案。",
+  "tags": [
+    "materials-science",
+    "literature-review",
+    "experiment-design",
+    "characterization",
+    "scientific-writing",
+    "academic-search",
+    "evidence-audit"
+  ]
+}
