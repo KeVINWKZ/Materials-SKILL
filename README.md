@@ -32,7 +32,7 @@ npx skills add KeVINWKZ/Materials-SKILL --list
 安装 Materials Research Guide：
 
 ```bash
-npx skills add KeVINWKZ/Materials-SKILL --skill materials-research-guide --agent codex -g -y
+npx skills add https://github.com/KeVINWKZ/Materials-SKILL --skill materials-research-guide
 ```
 
 也可以安装仓库中的全部 Skill：
