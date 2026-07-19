@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Audit a generated Markdown report for required sections and source identifiers."""
+"""Audit a complete-mode ten-section Markdown report.
+
+This script is not suitable for compact-mode outputs. Use
+references/compact-audit-checklist.md for compact-mode review.
+"""
 
 from __future__ import annotations
 
@@ -90,8 +94,20 @@ def audit(markdown: str, minimum_sources: int) -> tuple[list[str], list[str], di
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description="Audit a complete-mode ten-section Markdown report only.",
+        epilog=(
+            "Compact-mode outputs must use references/compact-audit-checklist.md "
+            "instead of this script."
+        ),
+    )
     parser.add_argument("report", help="Markdown report path, or - to read UTF-8 text from stdin")
+    parser.add_argument(
+        "--mode",
+        choices=("complete",),
+        required=True,
+        help="Required safety gate confirming that the report uses complete mode.",
+    )
     parser.add_argument("--min-sources", type=int, default=3)
     args = parser.parse_args()
     if args.min_sources < 1:

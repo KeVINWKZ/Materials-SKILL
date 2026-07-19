@@ -24,7 +24,8 @@ description: "Design evidence-grounded materials-science research plans for any 
 - 只回答用户请求的模块，不自动补齐十章节；
 - 目标为约 1200 个中文字符以内，引用除外；
 - 核验 3–5 个最相关来源；通常用 2–4 组定向检索；
-- 不自动创建文件、读取参考文件或运行审计脚本；
+- 不自动创建文件或加载完整模式参考文件；
+- 交付前只用 [references/compact-audit-checklist.md](references/compact-audit-checklist.md) 做轻量自检；不得运行 `scripts/audit_output.py`；
 - 结尾只给一个最有价值的下一步。
 
 ### 完整模式
@@ -33,9 +34,10 @@ description: "Design evidence-grounded materials-science research plans for any 
 
 - 精确参数、系统检索或创新性判断：读 [references/evidence-policy.md](references/evidence-policy.md)；
 - 可执行实验设计：读 [references/experimental-design-guardrails.md](references/experimental-design-guardrails.md)；
+- 缺少直接文献且需参数起点或标准方法：只查 [references/domain-starting-points.md](references/domain-starting-points.md) 中匹配的领域；
 - 十章节正式报告：读 [references/output-contract.md](references/output-contract.md)。
 
-仅在用户要求保存正式报告时创建文件。报告已保存且允许执行脚本时，再运行 `scripts/audit_output.py`；否则做内联检查，不为审计单独申请高权限。
+仅在用户要求保存正式报告时创建文件。`scripts/audit_output.py` **只审计完整模式的十章节报告**；报告已保存且允许执行脚本时，使用 `--mode complete` 运行。紧凑输出改用轻量清单，不得交给该脚本。
 
 ## 输入与边界
 
@@ -43,11 +45,12 @@ description: "Design evidence-grounded materials-science research plans for any 
 
 ## 检索与核验
 
-1. 用材料别名/化学式、工艺、目标性能、失效模式和机理构建少量高信息检索式。
-2. 优先直接匹配的同行评议原始研究，再用标准或综述补方法与背景。
-3. 核验题名、作者、来源、年份和 DOI/稳定链接；搜索摘要只作线索。
+1. 先识别可用检索能力。若 `$nature-academic-search` 可用，优先用其 `multi-source-search` 路由做多源发现与去重；否则使用现有学术数据库、出版商、Crossref、PubMed、arXiv 或官方标准入口。
+2. 用材料别名/化学式、工艺、目标性能、失效模式和机理构建少量高信息检索式。
+3. 优先直接匹配的同行评议原始研究，再用标准或综述补方法与背景；核验题名、作者、来源、年份和 DOI/稳定链接。
 4. 关键数字需正文、方法或补充材料支持；仅元数据或摘要可见时降低结论强度。
-5. 主要决策已有证据后停止扩展检索；冲突来源并列呈现。
+5. 若没有任何实时检索能力：开头简短声明；不得使用 `[D]` 或 `M/A/F`，不得凭记忆生成已核验引用；所有文献只列为 `[U]` 候选线索，参数限 `[S]/[X]`，创新点限“候选”，机理限“工作假设”。同时给出可复制检索式。
+6. 主要决策已有证据后停止扩展检索；冲突来源并列呈现。完整降级规则见 [references/evidence-policy.md](references/evidence-policy.md)。
 
 ## 工作流
 
