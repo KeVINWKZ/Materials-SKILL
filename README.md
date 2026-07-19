@@ -1,4 +1,4 @@
-[![skills.sh](https://skills.sh/b/KeVINWKZ/Materials-SKILL)](https://skills.sh/KeVINWKZ/Materials-SKILL)
+
 <div align="center">
 
 <img src="skills/materials-research-guide/assets/materials-research-guide-icon.png" alt="Materials Research Guide" width="176">
@@ -7,8 +7,7 @@
 
 Evidence-grounded AI skills for materials-science research.
 
-[![skills.sh](https://skills.sh/b/KeVINWKZ/Materials-SKILL)](https://skills.sh/KeVINWKZ/Materials-SKILL)
-![License](https://img.shields.io/badge/license-MIT-c7ced8)
+
 
 </div>
 
