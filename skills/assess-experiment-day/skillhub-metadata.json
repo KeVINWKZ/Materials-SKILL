@@ -1,0 +1,14 @@
+{
+  "slug": "assess-experiment-day",
+  "version": "1.0.0",
+  "displayName": "实验开工日评",
+  "summary": "结合天气、实验室条件、样品、设备、人员、日期与设计准备度判断今日实验安排，并将黄历和传统风水作为零权重文化参考。",
+  "tags": [
+    "experiment-planning",
+    "laboratory-safety",
+    "weather",
+    "daily-planning",
+    "research-workflow",
+    "chinese-almanac"
+  ]
+}

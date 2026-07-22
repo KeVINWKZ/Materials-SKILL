@@ -1,0 +1,4 @@
+interface:
+  display_name: "实验开工日评"
+  short_description: "结合实时条件与民俗文化参考判断今天适合开展哪些科研实验"
+  default_prompt: "Use $assess-experiment-day to assess whether today is suitable for my planned experiments and recommend the best experiment types."
