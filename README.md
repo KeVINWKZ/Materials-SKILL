@@ -1,15 +1,13 @@
 <div align="center">
 
-<img src="skills/materials-research-guide/assets/materials-research-guide-icon.png"
-     alt="Materials Research Guide"
-     width="176">
+<img src="skills/materials-research-guide/assets/materials-research-guide-icon.png" alt="Materials Research Guide" width="176">
 
 # Materials Skills
 
 Evidence-grounded AI skills for materials-science research.
 
 [![skills.sh](https://skills.sh/b/KeVINWKZ/Materials-SKILL)](https://skills.sh/KeVINWKZ/Materials-SKILL)
-![License](https://img.shields.io/github/license/KeVINWKZ/Materials-SKILL)
+![License](https://img.shields.io/badge/license-MIT-c7ced8)
 
 </div>
 
@@ -25,6 +23,14 @@ Evidence-grounded AI skills for materials-science research.
 
 v2.1.0 增加学术检索 Skill 联动、无检索工具时的证据降级、紧凑模式轻量审计、无直接文献时的工程起点规则，以及常见材料领域的方法标准入口。
 
+### 实验开工日评
+
+结合实时天气、实验室环境、样品敏感性、设备与公用工程、人员、日期安排、实验设计准备度和外部扰动，判断今天是否适合开展实验并推荐实验类型。黄历和传统风水仅作为零权重文化参考，不参与安全或科学评分。
+
+- Skill ID：`assess-experiment-day`
+- Version：`1.0.0`
+- Source：[skills/assess-experiment-day](skills/assess-experiment-day)
+
 ## Install
 
 查看仓库中可安装的 Skill：
@@ -39,6 +45,12 @@ npx skills add KeVINWKZ/Materials-SKILL --list
 npx skills add KeVINWKZ/Materials-SKILL --skill materials-research-guide --agent codex -g -y
 ```
 
+安装实验开工日评：
+
+```bash
+npx skills add KeVINWKZ/Materials-SKILL --skill assess-experiment-day --agent codex -g -y
+```
+
 也可以安装仓库中的全部 Skill：
 
 ```bash
@@ -49,6 +61,7 @@ npx skills add KeVINWKZ/Materials-SKILL --all
 
 ```text
 使用 $materials-research-guide，为我的材料体系制定有可核验文献依据的研究方案。
+使用 $assess-experiment-day，结合我所在地和计划实验判断今天适合做什么实验。
 ```
 
 ## Repository structure
@@ -59,13 +72,18 @@ Materials-SKILL/
 ├── README.md
 ├── LICENSE.md
 └── skills/
-    └── materials-research-guide/
+    ├── materials-research-guide/
         ├── SKILL.md
         ├── agents/
         ├── assets/
         ├── examples/
         ├── references/
         ├── scripts/
+        └── skillhub-metadata.json
+    └── assess-experiment-day/
+        ├── SKILL.md
+        ├── agents/
+        ├── references/
         └── skillhub-metadata.json
 ```
 
